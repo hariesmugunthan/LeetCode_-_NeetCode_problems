@@ -1,8 +1,7 @@
 import java.util.*;
 
-
-public class RomanToInteger {
-    public static int romanToInt(String s) {
+class Solution {
+    public int romanToInt(String s) {
         Map<Character, Integer> romanMap = new HashMap<>();
         romanMap.put('I', 1);
         romanMap.put('V', 5);
@@ -28,8 +27,18 @@ public class RomanToInteger {
         return total;
     }
 
+   
     public static void main(String[] args) {
-        String roman = "XIII"; // Example: 13
-        System.out.println("Integer value of " + roman + " is " + romanToInt(roman));
+        Solution obj = new Solution();
+
+        String roman1 = "III";
+        String roman2 = "IX";
+        String roman3 = "LVIII";
+        String roman4 = "MCMXCIV";
+
+        System.out.println("Roman: " + roman1 + " → Integer: " + obj.romanToInt(roman1));
+        System.out.println("Roman: " + roman2 + " → Integer: " + obj.romanToInt(roman2));
+        System.out.println("Roman: " + roman3 + " → Integer: " + obj.romanToInt(roman3));
+        System.out.println("Roman: " + roman4 + " → Integer: " + obj.romanToInt(roman4));
     }
 }
