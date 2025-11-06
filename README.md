@@ -4,7 +4,6 @@ The problems will be from different topics .
 
 📌 **What you'll find here:**
 - Java solutions for a wide range of DSA problems
-- Clean and readable code with comments
 - Organized folder structure based on problem type
 
 🚀 **Why I’m doing this:**
